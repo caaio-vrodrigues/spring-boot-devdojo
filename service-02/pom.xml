@@ -12,7 +12,8 @@
 	<artifactId>service-02</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>Test Service 02</name>
-	<description>Segundo serviço utilizando Spring Boot.</description>
+	<description>Demo project for Spring Boot</description>
+	
 	<url/>
 	<licenses>
 		<license/>
@@ -26,9 +27,11 @@
 		<tag/>
 		<url/>
 	</scm>
+	
 	<properties>
 		<java.version>21</java.version>
 	</properties>
+	
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -39,6 +42,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
+			<optional>true</optional>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-configuration-processor</artifactId>
 			<optional>true</optional>
 		</dependency>
 		<dependency>
@@ -64,6 +72,10 @@
 							<groupId>org.projectlombok</groupId>
 							<artifactId>lombok</artifactId>
 						</path>
+						<path>
+							<groupId>org.springframework.boot</groupId>
+							<artifactId>spring-boot-configuration-processor</artifactId>
+						</path>
 					</annotationProcessorPaths>
 				</configuration>
 			</plugin>
@@ -81,5 +93,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
 </project>
